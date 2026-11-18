@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 # checked-upload.sh — загрузка с проверкой контрольной суммы на приёме
 # ВПИШИТЕ пароль и сумму из вывода: shasum -a 256 myapp-1.0.1.tar.gz
-PASSWORD="____"
-SUM="____"
+PASSWORD="$pas"
+SUM="00d4adf5195102c27ef88b36aebcc61507199dfddf07dd66bbf3b8ac765fddd"
 
 curl -u admin:$PASSWORD \
   -H "X-Checksum-Sha256:$SUM" \
